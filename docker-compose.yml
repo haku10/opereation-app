@@ -6,5 +6,5 @@ services:
     ports:
       - "9501:3000"
     volumes:
-      - ".:/opereation-app"
+      - .:/opereation-app
     tty: true
