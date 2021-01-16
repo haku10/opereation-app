@@ -7,5 +7,8 @@ services:
       - "9501:3000"
     volumes:
       - .:/opereation-app
-      - /opereation-app/node_modules
+      - node_modules_volume:/opereation-app/node_modules
     tty: true
+volumes:
+  node_modules_volume:
+    name: react_node_modules
