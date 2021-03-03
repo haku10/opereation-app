@@ -9,6 +9,8 @@ services:
       - .:/opereation-app
       - node_modules_volume:/opereation-app/node_modules
     tty: true
+    env_file:
+      - .env
 volumes:
   node_modules_volume:
     name: react_node_modules

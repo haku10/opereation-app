@@ -6,6 +6,6 @@ ADD . /opereation-app
 RUN yarn install
 RUN yarn build
 # Webpackによるビルド
-RUN ./node_modules/.bin/webpack
+RUN yarn run build
 
 CMD [ "yarn", "start" ]
